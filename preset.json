@@ -25,7 +25,8 @@
             "usePolyfill": true,
             "locale": "en"
         },
-        "@vue/cli-plugin-unit-mocha": {}
+        "@vue/cli-plugin-unit-mocha": {},
+        "vue-cli-plugin-pixelthin": {}
     },
     "router": true,
     "routerHistoryMode": true,
