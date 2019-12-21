@@ -10,12 +10,8 @@ module.exports = (api, options) => {
             "vuex": "^3.0.1",
             "vue-router": "^3.0.3",
             "a11y-focus": "^0.1.0",
-        },
-        devDependencies: {
-            "prerender-spa-plugin": "^3.4.0",
             "vue-meta": "2.3.1",
-            "copy-webpack-plugin": "^5.0.5"
-        }
+        },
     })
     api.render('./template')
 
