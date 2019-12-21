@@ -1,0 +1,13 @@
+{
+  "main": "preset.json",
+  "name": "vue-cli-preset-pixelthin",
+  "version": "0.1.0",
+  "description": "vue-cli preset to bootstrap a web app / website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixelThin/vue-cli-preset-pixelthin.git"
+  },
+  "homepage": "https://github.com/PixelThin/vue-cli-preset-pixelthin#readme",
+  "dependencies": {
+  }
+}

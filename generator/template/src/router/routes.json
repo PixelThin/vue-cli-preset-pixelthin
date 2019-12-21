@@ -1,0 +1,18 @@
+[
+    {
+        "path": "/",
+        "name": "home"
+    },
+    {
+        "path": "/contact-us",
+        "name": "contact-us"
+    },
+    {
+        "path": "/about-us",
+        "name": "about-us"
+    },
+    {
+        "path": "/what-we-do",
+        "name": "what-we-do"
+    }
+]
