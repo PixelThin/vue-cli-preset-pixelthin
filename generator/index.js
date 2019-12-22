@@ -1,7 +1,7 @@
 const fs = require('fs')
 module.exports = (api, options) => {
-    if (!api.hasPlugin('vuetify')) {
-        throw (new Error('This plugin has a peer dependency upon Vuetify. Please install the Vuetify plugin first and try again."'))
+    if (!api.hasPlugin('vuetify') || !api.hasPlugin('vuex')) {
+        throw (new Error('This plugin has a peer dependency upon Vuetify and vuex. Please install the Vuetify plugin first and try again."'))
     }
     api.extendPackage({
         dependencies: {
