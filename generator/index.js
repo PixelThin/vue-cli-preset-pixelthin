@@ -4,6 +4,10 @@ module.exports = (api, options) => {
         throw (new Error('This plugin has a peer dependency upon Vuetify and vuex. Please install the Vuetify plugin first and try again."'))
     }
     api.extendPackage({
+        scripts: {
+            "build:docker": "conex 'sudo docker build . -t localhost:32000/new-app-web:${package.version}'",
+            "build:publish": "conex 'sudo docker push localhost:32000/new-app-web:${package.version}'"
+        },
         dependencies: {
             "axios": "^0.19.0",
             "vue-scroll-reveal": "^1.0.11",
@@ -11,6 +15,7 @@ module.exports = (api, options) => {
             "vue-router": "^3.0.3",
             "a11y-focus": "^0.1.0",
             "vue-meta": "2.3.1",
+            "conex": "^1.2.1",
         },
     })
     api.render('./template')

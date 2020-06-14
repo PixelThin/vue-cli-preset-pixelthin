@@ -1,18 +1,22 @@
 [
     {
         "path": "/",
-        "name": "home"
+        "name": "home",
+        "preRender": true
     },
     {
         "path": "/contact-us",
-        "name": "contact-us"
+        "name": "contact-us",
+        "preRender": true
     },
     {
         "path": "/about-us",
-        "name": "about-us"
+        "name": "about-us",
+        "preRender": true
     },
     {
         "path": "/what-we-do",
-        "name": "what-we-do"
+        "name": "what-we-do",
+        "preRender": true
     }
 ]
