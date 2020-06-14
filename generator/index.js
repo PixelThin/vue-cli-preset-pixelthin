@@ -15,8 +15,10 @@ module.exports = (api, options) => {
             "vue-router": "^3.0.3",
             "a11y-focus": "^0.1.0",
             "vue-meta": "2.3.1",
-            "conex": "^1.2.1",
         },
+        devDependencies: {
+            "conex": "^1.2.1",
+        }
     })
     api.render('./template')
 
