@@ -5,7 +5,7 @@ module.exports = (api, options) => {
     }
     api.extendPackage({
         scripts: {
-            "build:all": "vue-cli-service build && yarn build:docker && yarn build:publish",
+            "build": "vue-cli-service build && yarn build:docker && yarn build:publish",
             "build:docker": "conex 'sudo docker build . -t localhost:32000/new-app-web:${package.version}'",
             "build:publish": "conex 'sudo docker push localhost:32000/new-app-web:${package.version}'"
         },
