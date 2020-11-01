@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import home from '@/views/home/home.vue'
-import { scrollBehavior } from '@/lib/default-scroll-behavior'
+import { createScrollBehavior } from '@/lib/default-scroll-behavior'
 import routes from './routes.json'
 const components = {
   home,
@@ -13,7 +13,7 @@ const components = {
 Vue.use(Router);
 
 export default new Router({
-  scrollBehavior,
+  scrollBehavior: createScrollBehavior({ y: 96 }),
   mode: 'history',
   base: process.env.BASE_URL,
   routes: routes.map((r) => ({ ...r, component: components[r.name] }))
